@@ -52,6 +52,11 @@ nosetests.xml
 *.html
 
 /archive
+/LABS1/CIFAR10/
+/LABS1/summary/
+/LABS1/Video/
+/LABS1/GroundTruth/
+
 
 /runipy
 

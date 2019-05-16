@@ -1,6 +1,8 @@
 import numpy as np
 import os
 from sklearn.metrics import confusion_matrix
+from sklearn.preprocessing import StandardScaler
+
 from skimage import draw
 from matplotlib import pyplot as plt
 
@@ -20,6 +22,7 @@ class CIFAR10:
         self.test['labels'] = np.load(os.path.join(path, 'test_labels.npy')).astype('uint8')
         
         self.labels = ['Airplane', 'Bird', 'Horse']
+	
 
 
 def evaluate_classifier(clf, test_data, test_labels):
